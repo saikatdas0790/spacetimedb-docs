@@ -18,7 +18,7 @@
           pkgs.mkShell {
             buildInputs = [
               pkgs.rustup
-              pkgs.spacetimedb
+              # pkgs.spacetimedb
             ];
           };
       };
