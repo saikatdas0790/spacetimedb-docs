@@ -27,10 +27,13 @@
   },
   "features": {
     "ghcr.io/eitsupi/devcontainer-features/nushell:0": {},
-    "ghcr.io/devcontainers/features/rust:1": {}
+    "ghcr.io/devcontainers/features/rust:1": {
+      "version": "1.86",
+      "profile": "default"
+    }
   },
   "hostRequirements": {
     "cpus": 4
   },
-  "postCreateCommand": "cargo install cargo-make"
+  "postCreateCommand": "curl -sSf https://install.spacetimedb.com | sh -s -- -y"
 }
