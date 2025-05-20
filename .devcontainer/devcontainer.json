@@ -27,13 +27,10 @@
   },
   "features": {
     "ghcr.io/eitsupi/devcontainer-features/nushell:0": {},
-    "ghcr.io/devcontainers/features/rust:1": {
-      "version": "1.86",
-      "profile": "default"
-    }
+    "ghcr.io/devcontainers/features/rust:1": {}
   },
   "hostRequirements": {
     "cpus": 4
   },
-  "postCreateCommand": "curl -sSf https://install.spacetimedb.com | sh -s -- -y"
+  "postCreateCommand": "nu .devcontainer/setup.nu"
 }
